@@ -1,0 +1,240 @@
+<!DOCTYPE html> <!--Ensuring HTML 5-->
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!--startup.css under Bootstrap css to override the styling-->
+        <link rel="stylesheet" href="startup.css">
+    
+        <title>Startup Up</title>
+    </head>
+    <body>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!--Navbar from bootstrap4-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded navbar-fixed-top">  <!--navbar fixed at the top-->
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="startup.logo" height="26"></a> <!-- image was shrinked to fit properly in navbar-->                              
+            <!--button for responsivness-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#startupNavbar" aria-controls="startupNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="startupNavbar">  <!--this [id] is used for internal linking in data target-->
+              <ul class="navbar-nav ml-auto">             <!--ml-auto shifts the contents to the right-->
+                <li class="nav-item active">              <!--active represents the default loading page-->
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> <!--As a convention span with a class sr-only is added for screen readers and this will not be displayed normally-->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary " href="#">Sign Up</a>
+                  </li>
+            </ul>
+            </div>
+        </nav>
+
+        <div id="stage">
+            <div id="stage-caption">
+                <h1 class="display-3">startup.logo The best you can get</h1>
+                <p>startup.logo is your safe place in unsafe world</p>
+                <a href="" class="btn btn-lg btn-success">Sign Up Now</a>
+            </div>
+        </div>
+
+        <section id="feature-one">  
+            <div class="container"> <!--using bootstrap4 container and row element-->
+                <div class="feature-content">   <!--Row is divided in 6+5+1=12 columns-->
+                    <div class="row"> 
+                        <div class="col-lg-6">    <!--using 6 columns for video part-->  
+                            <!--Go to a youtube video under share option select embed and copy+paste whole code to add the particular video-->
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZTLAx3VDX7g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1"> <!--using 5 columns and 1 to provide spacing -->
+                            <h6>Watch this</h6>
+                            <h2>Witness the power of startup.logo in this video</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus quam sit blanditiis, architecto maiores autem laborum, commodi assumenda rerum sequi vel mollitia non enim quidem explicabo? Exercitationem consectetur ut expedita!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-two" class="feature-dark">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">  
+                        <!--This columns should be immediate child of row class-->       
+                        <div  class="col-lg-6 feature-caption my-auto"> <!--my-auto is a utility class that indents contents vertically in center-->
+                            <h6>Incredible Feature</h6>
+                            <h2>Totally random websites. At the touch of your fingers </h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure et omnis modi doloribus voluptate expedita dolorem magni accusamus vitae harum nobis sint ipsam, deleniti animi quae in, officiis dolores.</p>
+                            <a href="" role="button" class="btn btn-outline-secondary btn-lg">Get in on the action</a>
+                        </div>
+                        <div class="col-lg-6 text-sm-center d-none d-md-block"> <!--d none means this content will remain hidden on all screen sizes d-md-block means it will display on medium an above-->
+                            <!--screenshot from https://www.staggeringbeauty.com-->
+                            <img src="img/iphone-1.png" alt="iphone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-three">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-md-block">
+                            <!--screenshot from https://www.trypap.com-->
+                            <img src="img/macbook.png" alt="macbook">
+                        </div>
+                        <div  class="col-lg-5 offset-lg-1 my-auto"> <!--lg-offset-1 gives spacing of columns size 1 from left-->
+                            <h6>The Wow factor</h6>
+                            <h2>To Our Memebers, We're The Fourth Startup.Logo</h2>
+                            <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo ipsum assumenda impedit vitae autem doloremque eveniet incidunt, sint ab, fugit pariatur labore earum dignissimos nesciunt nostrum alias sequi in iste!</p>
+                            <a role="button" class="btn btn-outline-success btn-lg">Git'r Done</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="feature-four" class="feature-alt">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">
+                        <div  class="col-lg-6 my-auto">
+                            <h6>Kudos</h6>
+                            <blockquote class="blockquote">
+                                &ldquo; No Startup Logo, No Kisses. &rdquo;<!--left qoutes and right quotes-->
+                                <footer class="blockquote-footer">
+                                    Brevlis Hussey ,<cite>Some guy at wedding</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div  class="col-lg-6 d-none d-md-block ">
+                            <img src="img/brad-elvis.png" alt="brad as elvis at wedding">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-five" class="feature-full">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h6>Powerfully packed action</h6>
+                            <h2>Crunch all you want. we will make startup.logo</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate natus totam, eveniet tempora fugit vitae ad fugiat animi est dolorem nobis vel repellendus dolor aspernatur adipisci dolorum. Laborum, dicta obcaecati.</p>
+                            
+                            <h6>With startup.logo you can:</h6>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>Breakthough with startup.logo</li>
+                                        <li>startup.logo on and on</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li>see the world with startup.logo</li>
+                                        <li>you can have a startup.logo like mine</li>
+                                    </ul>
+                                </div>
+                                <!--screenshot from: https://www.sanger.dk-->
+                                <img src="img/macbook-2.png" alt="macbook">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-six" class="feature-dark">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">
+                        <div class="col-lg-6 d-none d-md-block">
+                            <img src="img/ipad.png" alt="ipad">
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 my-auto">
+                            <h6>The all in one solution</h6>
+                            <h2>Nobody doesn't like startup.logo</h2>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore mollitia repellat aut itaque ipsam nostrum officia, id cupiditate quibusdam fugiat nemo perspiciatis quis inventore minima velit modi impedit exercitationem.</p>
+                            <a href="" role="button" class="btn btn-secondary btn-lg">Mango (or Mangoes?)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="feature-seven">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <h6>100% No Money back Guarantee</h6>
+                            <h2>Put your money where Startup.logo mouth is</h2>
+                            <p>Starting as low as $379/day Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non quibusdam sint doloribus totam praesentium autem, hic distinctio! Eius voluptas accusamus rerum maxime dolore, inventore nostrum, tenetur dolores esse laboriosam ipsum?</p>
+                            <a role="button" href="" class="btn btn-success btn-lg">Toss some Money our way (Please)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        &copy; 2020 Startup.logo is not a real thing. If it is this site was not meant to be a mockery of it.
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Our Product</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Solutions</a></li>
+                            <li><a href="">Plans</a></li>
+                            <li><a href="">Sign in</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Our Team</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="">About</a></li>
+                            <li><a href="">Highlights</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Partners</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h6>Others</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contacts</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

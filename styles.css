@@ -1,0 +1,51 @@
+/* styles.css */
+html,body{
+    height: 100%;
+}
+#al{
+    margin-left: 200px;
+}
+
+#navigate{
+    border-color: white;
+}
+
+img{
+    max-width: 100%;
+}
+#cover{
+    background: #222 url("img/stars.jpg") center center no-repeat ;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+#cover-caption{
+    width: 100%;
+}
+.section-content{
+    padding: 5rem;
+}
+#about{
+    background: url(img/girlincar.jpg) center center no-repeat;
+    background-size: cover;
+}
+.about-text{
+    padding: 1.875rem;
+    color: white;
+    background: rgba(0 ,0 ,0 ,0.8);
+}
+#footer-main{
+    background: #222;
+    padding: 2.5rem 0;     /* 2.5rem is top and bottom padding and 0 is right and left */
+    color: white;
+    font-size: 0.8rem;
+}
+.card-block{
+    padding: 0.5rem ;
+}
